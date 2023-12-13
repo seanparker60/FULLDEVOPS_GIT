@@ -711,10 +711,12 @@ for(OrderActivationRules__mdt act:OrderActivationRules){
                                             
                                             item.ComponentListPrice__c = ass.ListPrice__c;
                                         }
+                                        /*
                                         if(Map_PBIndexation.get(Map_BillTOPB.get(BT)) != null && ass.ApplyIndexationPercentage__c == true){
                                             ass.IndexationPercentage__c =   Map_PBIndexation.get(Map_BillTOPB.get(BT));
                                             item.unitprice = ass.ListPrice__c + (ass.ListPrice__c * (ass.IndexationPercentage__c/100));
-                                        }    
+                                        } 
+                                        */   
                                     }
                                     else{
                                         item.unitprice =ass.Price;

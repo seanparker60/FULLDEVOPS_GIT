@@ -710,7 +710,7 @@ for(OrderActivationRules__mdt act:OrderActivationRules){
                                         if(ass.Product2.CustomPricingAllowed__c == true){
                                             
                                             item.ComponentListPrice__c = ass.ListPrice__c;
-                                        }
+                                        } 
                                         /*
                                         if(Map_PBIndexation.get(Map_BillTOPB.get(BT)) != null && ass.ApplyIndexationPercentage__c == true){
                                             ass.IndexationPercentage__c =   Map_PBIndexation.get(Map_BillTOPB.get(BT));

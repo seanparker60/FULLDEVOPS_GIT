@@ -706,7 +706,7 @@ for(OrderActivationRules__mdt act:OrderActivationRules){
 
                                     if(Map_PBEUnitPrice.get(PBId) != null && (ass.Contract__c ==null || ((ass.Contract__c !=null) && ass.Contract__r.Indexation__c == true ))){
                                         item.unitprice = Map_PBEUnitPrice.get(PBId);
-                                        /*
+                                        
                                         if(ass.Product2.CustomPricingAllowed__c == true){
                                             
                                             item.ComponentListPrice__c = ass.ListPrice__c;
@@ -716,7 +716,7 @@ for(OrderActivationRules__mdt act:OrderActivationRules){
                                             ass.IndexationPercentage__c =   Map_PBIndexation.get(Map_BillTOPB.get(BT));
                                             item.unitprice = ass.ListPrice__c + (ass.ListPrice__c * (ass.IndexationPercentage__c/100));
                                         } 
-                                        */   
+                                           
                                     }
                                     else{
                                         item.unitprice =ass.Price;
